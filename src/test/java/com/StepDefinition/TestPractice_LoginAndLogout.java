@@ -27,10 +27,10 @@ public class TestPractice_LoginAndLogout extends WrapperClass {
 		loginlogout=new TestPractice_LoginAndLogout_Page(driver);
 		loginlogout.clickMyAccount();
 	}
-	@Then("^the user login using username and password$")
-	public void the_user_login_using_username_and_password() {
-		loginlogout.enterUserName("vmcube1@gmail.com");
-		loginlogout.enterPassword("REyansh123$");
+	@Then("^the user login using (.+) and (.+)$")
+	public void the_user_login_using_username_and_password(String username,String password) {
+		loginlogout.enterUserName(username);
+		loginlogout.enterPassword(password);
 	}
 	@Then("^click on the login button user navigate to next page$")
 	public void click_on_the_login_button_user_navgate_to_next_page() {

@@ -1,15 +1,19 @@
 @TestPractice
 Feature: Test Practice Website
 @TC01_TestPractice
-Scenario:
+Scenario Outline:
 login and logout into TestPractice
 Given the user launch the chrome application
 When the user open the TestPractice Home Page
 Then the user open the My Account Page
-Then the user login using username and password
+Then the user login using <username> and <password>
 Then click on the login button user navigate to next page
 Then click on the logout button
 Then close the browser
+Examples:
+|username||password|
+|vmcube1@gmail.com||REyansh123$|
+|vmcube2@gmail.com||REyansh123$$|
 @TC02_TestPractice
 Scenario:
 login to TestPractice
@@ -58,10 +62,18 @@ Given the user1 launches chrome application
 When the user1 opens TestPractice Home Page
 Then the user1 open My Account Page
 Then the user1 try to login using username and without password
-Then click on the login button1 
+Then click on the login button1         
 Then application will show an error msg
 Then close the browser5
-
+@TC07_TestPractice
+Scenario:
+Given the user launches chrome application
+When the user opens TestPractice Home Page
+Then the user open My Account Page
+Then the user try to login using valid password and empty username
+Then click on the login button2 
+Then application will show an error message
+Then close the browser6
 
 
 
