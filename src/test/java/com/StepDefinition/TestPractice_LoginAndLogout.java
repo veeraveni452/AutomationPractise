@@ -40,8 +40,8 @@ public class TestPractice_LoginAndLogout extends WrapperClass {
 	public void click_on_the_logout_button() {
 		loginlogout.clickLogout();
 	}
-	@Then("^close the browser$")
-	public void close_the_browser() {
+	@Then("^closing the browser$")
+	public void closing_the_browser() {
 		quit();
 	}
 	

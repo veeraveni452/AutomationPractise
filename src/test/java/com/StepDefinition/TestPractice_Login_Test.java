@@ -37,8 +37,8 @@ public class TestPractice_Login_Test extends WrapperClass {
 	public void click_on_the_login_button_user1_navgate_to_next_page() {
 		login.clickLogin();
 	}
-	@Then("^close the browser1$")
-	public void close_the_browser1() {
+	@Then("^closes the browser1$")
+	public void closes_the_browser1() {
 		quit();
 	}
 }

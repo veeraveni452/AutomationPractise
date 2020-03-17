@@ -20,7 +20,7 @@ public class Shop_HTML_Test extends WrapperClass {
 
 	@When("^the user1 opened the TestPractice Home Page$")
 	public void the_user1_opened_the_TestPractice_Home_Page() {
-		OpenWebsite();
+		
 	}
 
 	@Then("^the user1 opened the My Account Page$")
@@ -49,8 +49,8 @@ public class Shop_HTML_Test extends WrapperClass {
 	public void the_user1_click_on_the_HTML_and_Add_to_Basket() {
 		html.goToHtml();
 	}
-	@Then("^close the browser3$")
-	public void close_the_browser3() {
+	@Then("^browser should be closed$")
+	public void browser_should_be_closed() {
 		quit();
 	}
 }

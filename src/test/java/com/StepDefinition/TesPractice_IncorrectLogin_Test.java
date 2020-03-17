@@ -36,8 +36,8 @@ public class TesPractice_IncorrectLogin_Test extends WrapperClass {
 	public void application_shows_an_error_msg() {
 		login.showError();
 	}
-	@Then("^close the browser4$")
-	public void close_the_browser() {
+	@Then("^chrome browser should be closed.$")
+	public void chrome_browser_should_be_closed() {
 			quit();
 	}
 }

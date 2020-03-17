@@ -36,8 +36,8 @@ public class WithoutUsernameTest extends WrapperClass {
 	public void application_will_show_an_error_message() {
 		login.errorMessage();;
 	}
-	@Then("^close the browser6$")
-	public void close_the_browser6() {
+	@Then("^closed the browser6$")
+	public void closed_the_browser6() {
 			quit();
 	}
 }

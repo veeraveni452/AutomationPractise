@@ -12,321 +12,88 @@ formatter.feature({
     }
   ]
 });
-formatter.scenarioOutline({
-  "line": 4,
+formatter.scenario({
+  "line": 130,
   "name": "",
-  "description": "login and logout into TestPractice",
+  "description": "Alert with OK",
   "id": "test-practice-website;",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@TC01_TestPractice"
-    }
-  ]
-});
-formatter.step({
-  "line": 6,
-  "name": "the user launch the chrome application",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "the user open the TestPractice Home Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "the user open the My Account Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "the user login using \u003cusername\u003e and \u003cpassword\u003e",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "click on the login button user navigate to next page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "click on the logout button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 13,
-  "name": "",
-  "description": "",
-  "id": "test-practice-website;;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "",
-        "password"
-      ],
-      "line": 14,
-      "id": "test-practice-website;;;1"
-    },
-    {
-      "cells": [
-        "vmcube1@gmail.com",
-        "",
-        "REyansh123$"
-      ],
-      "line": 15,
-      "id": "test-practice-website;;;2"
-    },
-    {
-      "cells": [
-        "vmcube2@gmail.com",
-        "",
-        "REyansh123$$"
-      ],
-      "line": 16,
-      "id": "test-practice-website;;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 15,
-  "name": "",
-  "description": "login and logout into TestPractice",
-  "id": "test-practice-website;;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 1,
-      "name": "@TestPractice"
-    },
-    {
-      "line": 3,
-      "name": "@TC01_TestPractice"
+      "line": 129,
+      "name": "@TC13_TestPractice"
     }
   ]
 });
 formatter.step({
-  "line": 6,
-  "name": "the user launch the chrome application",
+  "line": 132,
+  "name": "launch chrome browser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "the user open the TestPractice Home Page",
+  "line": 133,
+  "name": "Home Page is opened",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "the user open the My Account Page",
+  "line": 134,
+  "name": "go to DemoSite",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
-  "name": "the user login using vmcube1@gmail.com and REyansh123$",
-  "matchedColumns": [
-    0,
-    2
-  ],
+  "line": 135,
+  "name": "SwithTo alerts",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
-  "name": "click on the login button user navigate to next page",
+  "line": 136,
+  "name": "click the button to display alert Msg",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
-  "name": "click on the logout button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "close the browser",
+  "line": 137,
+  "name": "close chrome application",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "TestPractice_LoginAndLogout.the_user_launch_the_chrome_application()"
+  "location": "AlertOk_Test.lauch_chrome_browser()"
 });
 formatter.result({
-  "duration": 7028821484,
+  "duration": 10039821972,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestPractice_LoginAndLogout.the_user_open_the_TestPractice_Home_Page()"
+  "location": "AlertOk_Test.Home_Page_is_opened()"
 });
 formatter.result({
-  "duration": 8804036339,
+  "duration": 98711737250,
   "status": "passed"
 });
 formatter.match({
-  "location": "TestPractice_LoginAndLogout.the_user_open_the_My_Account_Page()"
+  "location": "AlertOk_Test.go_to_DemoSite()"
 });
 formatter.result({
-  "duration": 9072117776,
-  "status": "passed"
+  "duration": 6381438971,
+  "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d80.0.3987.132)\nBuild info: version: \u00273.7.0\u0027, revision: \u00272321c73\u0027, time: \u00272017-11-02T22:22:35.584Z\u0027\nSystem info: host: \u0027BLT1036\u0027, ip: \u0027192.168.1.36\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\BLTUSE~1.BLT\\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49228}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: a9b33429ec2f4307b7afa923f4134225\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"menu-item-251\"]/a}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\r\n\tat com.pages.AlertOk_Page.clickDemoSite(AlertOk_Page.java:21)\r\n\tat com.StepDefinition.AlertOk_Test.go_to_DemoSite(AlertOk_Test.java:28)\r\n\tat ✽.Then go to DemoSite(./src/main/resources/feature/Testcase.feature:134)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "vmcube1@gmail.com",
-      "offset": 21
-    },
-    {
-      "val": "REyansh123$",
-      "offset": 43
-    }
-  ],
-  "location": "TestPractice_LoginAndLogout.the_user_login_using_username_and_password(String,String)"
+  "location": "AlertOk_Test.SwithTo_alerts()"
 });
 formatter.result({
-  "duration": 853352805,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "TestPractice_LoginAndLogout.click_on_the_login_button_user_navgate_to_next_page()"
+  "location": "AlertOk_Test.click_the_button_to_display_alert_Msg()"
 });
 formatter.result({
-  "duration": 6873828777,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "TestPractice_LoginAndLogout.click_on_the_logout_button()"
+  "location": "AlertOk_Test.close_chrome_application()"
 });
 formatter.result({
-  "duration": 8911591936,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestPractice_LoginAndLogout.close_the_browser()"
-});
-formatter.result({
-  "duration": 2365147163,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "",
-  "description": "login and logout into TestPractice",
-  "id": "test-practice-website;;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@TestPractice"
-    },
-    {
-      "line": 3,
-      "name": "@TC01_TestPractice"
-    }
-  ]
-});
-formatter.step({
-  "line": 6,
-  "name": "the user launch the chrome application",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "the user open the TestPractice Home Page",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "the user open the My Account Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "the user login using vmcube2@gmail.com and REyansh123$$",
-  "matchedColumns": [
-    0,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "click on the login button user navigate to next page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "click on the logout button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TestPractice_LoginAndLogout.the_user_launch_the_chrome_application()"
-});
-formatter.result({
-  "duration": 4483147768,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestPractice_LoginAndLogout.the_user_open_the_TestPractice_Home_Page()"
-});
-formatter.result({
-  "duration": 7276880535,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestPractice_LoginAndLogout.the_user_open_the_My_Account_Page()"
-});
-formatter.result({
-  "duration": 3190495165,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "vmcube2@gmail.com",
-      "offset": 21
-    },
-    {
-      "val": "REyansh123$$",
-      "offset": 43
-    }
-  ],
-  "location": "TestPractice_LoginAndLogout.the_user_login_using_username_and_password(String,String)"
-});
-formatter.result({
-  "duration": 1869042369,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestPractice_LoginAndLogout.click_on_the_login_button_user_navgate_to_next_page()"
-});
-formatter.result({
-  "duration": 3170257202,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestPractice_LoginAndLogout.click_on_the_logout_button()"
-});
-formatter.result({
-  "duration": 4127949825,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TestPractice_LoginAndLogout.close_the_browser()"
-});
-formatter.result({
-  "duration": 2334176756,
-  "status": "passed"
+  "status": "skipped"
 });
 });

@@ -63,8 +63,8 @@ public class Shop_Android_Test extends WrapperClass {
 	public void the_user1_check_stock_is_available_or_not() {
 		shopAndroid.checkStock();
 	}
-	@Then("^close the browser2$")
-	public void close_the_browser2() {
+	@Then("^it will close the browser2$")
+	public void it_will_close_the_browser2() {
 		quit();
 	}
 }

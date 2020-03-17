@@ -36,8 +36,8 @@ public class WithoutPasswordTest extends WrapperClass {
 	public void application_will_show_an_error_msg() {
 		login.errorMessage();;
 	}
-	@Then("^close the browser5$")
-	public void close_the_browser5() {
+	@Then("^the opened chrome browser will be closed$")
+	public void the_opened_chrome_browser_will_be_closed() {
 			quit();
 	}
 }
