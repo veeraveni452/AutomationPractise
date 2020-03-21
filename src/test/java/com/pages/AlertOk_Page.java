@@ -17,9 +17,11 @@ public class AlertOk_Page {
 	public AlertOk_Page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	//click demoSite
 	public void clickDemoSite() {
 		demoSite.click();
 	}
+	// click switchTo
 	public void clickSwitchTo() {
 		switchTo.click();
 		switchTo.sendKeys(Keys.ARROW_DOWN);
