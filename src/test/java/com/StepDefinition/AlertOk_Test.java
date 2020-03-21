@@ -10,6 +10,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class AlertOk_Test extends WrapperClass{
+	//creating an object to the AlertOk_Page
 	AlertOk_Page alert;
 	@Given("^launch chrome browser$")
 	public void lauch_chrome_browser() {
