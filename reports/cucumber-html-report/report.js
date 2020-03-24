@@ -13,101 +13,101 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "line": 140,
+  "line": 160,
   "name": "",
-  "description": "Register_WithoutEmail",
+  "description": "Register_WithoutPassword",
   "id": "test-practice-website;",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 139,
-      "name": "@TC14_TestPractice"
+      "line": 159,
+      "name": "@TC16_TestPractice"
     }
   ]
 });
 formatter.step({
-  "line": 142,
-  "name": "launching chrome browser",
+  "line": 162,
+  "name": "launching the chromeBrowser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 143,
-  "name": "Home Page should open",
+  "line": 163,
+  "name": "open home page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 144,
-  "name": "go to myaccount",
+  "line": 164,
+  "name": "click on myaccountpage",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 145,
-  "name": "leave mail id",
+  "line": 165,
+  "name": "enter the mailid",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 146,
-  "name": "enter the pass",
+  "line": 166,
+  "name": "leave the password",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 147,
-  "name": "click on register",
+  "line": 167,
+  "name": "click the register button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 148,
-  "name": "close chrome app",
+  "line": 168,
+  "name": "close the chromeApplication",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Register_WithoutMail.launching_chrome_browser()"
+  "location": "Register_WithoutPassword.launching_the_chromeBrowser()"
 });
 formatter.result({
-  "duration": 83505433564,
+  "duration": 26536407447,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register_WithoutMail.Home_Page_should_opened()"
+  "location": "Register_WithoutPassword.open_home_page()"
 });
 formatter.result({
-  "duration": 196768865163,
+  "duration": 121478632829,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register_WithoutMail.go_to_myaccount()"
+  "location": "Register_WithoutPassword.click_on_myaccountpage()"
 });
 formatter.result({
-  "duration": 63922008245,
+  "duration": 38716679844,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register_WithoutMail.enter_mail_id()"
+  "location": "Register_WithoutPassword.enter_the_mailid()"
 });
 formatter.result({
-  "duration": 7032799903,
+  "duration": 2769766194,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register_WithoutMail.enter_the_password()"
+  "location": "Register_WithoutPassword.leave_the_password()"
 });
 formatter.result({
-  "duration": 3778210039,
+  "duration": 157829637,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register_WithoutMail.click_on_register()"
+  "location": "Register_WithoutPassword.click_the_register_button()"
 });
 formatter.result({
-  "duration": 23987331666,
+  "duration": 12060101638,
   "status": "passed"
 });
 formatter.match({
-  "location": "Register_WithoutMail.close_chrome_app()"
+  "location": "Register_WithoutPassword.close_the_chromeApplication()"
 });
 formatter.result({
-  "duration": 18820712917,
+  "duration": 7474789974,
   "status": "passed"
 });
 });

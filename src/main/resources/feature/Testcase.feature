@@ -156,7 +156,16 @@ Then leave mailid
 Then leave password
 Then click on register button
 Then close the chrome app
-
+@TC16_TestPractice
+Scenario:
+Register_WithoutPassword
+Given launching the chromeBrowser
+When open home page
+Then click on myaccountpage
+Then enter the mailid
+Then leave the password
+Then click the register button
+Then close the chromeApplication
 
 
 

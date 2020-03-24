@@ -17,6 +17,8 @@ public class Register_Page {
 	private WebElement register;
 	@FindBy(xpath="//strong[contains(text(),'Error:')]")
 	private WebElement error;
+	@FindBy(xpath="//strong[contains(text(),'Error:')]")
+	private WebElement errorPass;
 	public Register_Page(WebDriver driver) {
 //		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -38,5 +40,11 @@ public class Register_Page {
 		Assert.assertEquals(actual, "Error:");
 		System.out.println("Please enter a valid mail id");
 	}
+	public void showErrorPass() {
+		String actual= errorPass.getText();
+		Assert.assertEquals(actual, "Error:");
+		System.out.println("Please enter the password");
+	}
+
 
 }

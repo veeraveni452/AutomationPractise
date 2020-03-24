@@ -8,13 +8,10 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = ".\\src\\main\\resources\\feature\\Testcase.feature",
 		plugin = {"pretty", "html:reports/cucumber-html-report"},
-		tags = {"@TC01_TestPractice,@TC02_TestPractice,@TC03_TestPractice,@TC04_TestPractice,@TC05_TestPractice"
-				+ ",@TC06_TestPractice,@TC07_TestPractice,@TC018_TestPractice,@TC09_TestPractice,@TC10_TestPractice,@TC11_TestPractice,@TC12_TestPractice,@TC13_TestPractice,"
-				+ "@TC14_TestPractice,@TC15_TestPractice"},
+		tags = {"@TC16_TestPractice"},
 		glue = {"com.StepDefinition"},
 		monochrome = true
 		)
-
-public class All_Runner {
+public class Register_WithoutPassword_Runner {
 
 }
