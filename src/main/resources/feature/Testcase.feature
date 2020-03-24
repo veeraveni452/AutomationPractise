@@ -146,6 +146,16 @@ Then leave mail id
 Then enter the pass
 Then click on register
 Then close chrome app
+@TC15_TestPractice
+Scenario:
+Register_WithoutEmailAndPassword
+Given launching the chrome browser
+When Home Page should be open
+Then go to myaccountpage
+Then leave mailid
+Then leave password
+Then click on register button
+Then close the chrome app
 
 
 
