@@ -2,7 +2,7 @@
 Feature: Test Practice Website
 @TC01_TestPractice
 Scenario Outline:
-login and logout into TestPractice
+LoginAndLogout_Test
 Given the user launch the chrome application
 When the user open the TestPractice Home Page
 Then the user open the My Account Page
@@ -16,7 +16,7 @@ Examples:
 |vmcube2@gmail.com||REyansh123$$|
 @TC02_TestPractice
 Scenario:
-login to TestPractice
+Login_Test
 Given the user1 launch the chrome application
 When the user1 open the TestPractice Home Page
 Then the user1 open the My Account Page
@@ -25,7 +25,7 @@ Then click on the login button user1 navigate to next page
 Then closes the browser1
 @TC03_TestPractice
 Scenario:
-shop android
+Shop_android
 Given the user1 has to launch the chrome application
 When the user1 opens the TestPractice Home Page
 Then the user1 opens the My Account Page
@@ -104,7 +104,7 @@ Then enter your review
 Then close the opened browser8
 @TC10_TestPractice
 Scenario:
-Stock Check
+Availability Check
 Given the user first launch the chrome application
 When the user then open TestPractice Home Page
 Then click on the Thinking in HTML
@@ -128,13 +128,24 @@ Then click on subscribe
 Then close the chrome application
 @TC13_TestPractice
 Scenario:
-Alert with OK
+Register_Invalid_Email
 Given launch chrome browser
 When Home Page is opened
-Then go to DemoSite
-Then SwithTo alerts
-Then click the button to display alert Msg
+Then go to myaccount page
+Then enter mail id
+Then enter password
+Then click register
 Then close chrome application
+@TC14_TestPractice
+Scenario:
+Register_WithoutEmail
+Given launching chrome browser
+When Home Page should open
+Then go to myaccount
+Then leave mail id
+Then enter the pass
+Then click on register
+Then close chrome app
 
 
 

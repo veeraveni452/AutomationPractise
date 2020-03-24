@@ -20,7 +20,7 @@ public class Shop_HTML_Test extends WrapperClass {
 
 	@When("^the user1 opened the TestPractice Home Page$")
 	public void the_user1_opened_the_TestPractice_Home_Page() {
-		
+		OpenWebsite();
 	}
 
 	@Then("^the user1 opened the My Account Page$")

@@ -10,7 +10,7 @@ import cucumber.api.java.en.When;
 
 public class AvailabilityCheck_Test extends WrapperClass {
 	AvailabilityCheck_Page check;
-	@Given("^the 1st user first launch the chrome application$")
+	@Given("^the user first launch the chrome application$")
 	public void the_1st_user_first_launch_the_chrome_application() {
 	    // Write code here that turns the phrase above into concrete actions
 	   LaunchApplication();

@@ -17,7 +17,7 @@ public class WrapperClass extends XLSXFileRead{
 
 	public void LaunchApplication( ) {
 		// To launch chrome browser
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\BLTuser.BLT1036\\eclipse-workspace\\CucumberAutomationTestPractice\\Driver\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 				driver = new ChromeDriver();
 				driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 				driver.manage().window().maximize();
